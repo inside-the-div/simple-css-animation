@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.container{
+	width: 1000px;
+	height: 600px;
+	border:2px solid #333;
+	margin: 30px auto;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.box-1{
+	width: 300px;
+	height: 200px;
+	background: rgba(0,0,0,0.3);
+	float: left;
+}
+.box-2{
+	width: 60px;
+	height: 60px;
+	background: red;
+	float: left;
+
+	/*margin-top: 140px;*/
+	/*margin-left: 240px;*/
+	
+	animation-name: myAnimation;
+	animation-duration:  4s;
+	animation-iteration-count: infinite;
+	/*animation-delay: 2s;*/
+	animation-timing-function: cubic-bezier(0.42, 0, 0, 0.6);
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes myAnimation{
+
+	25%{
+		margin-top: 140px; 
+		margin-left: 0px;
+		background: pink
+	}
+	50%{
+		margin-top: 140px;
+		margin-left: 240px;
+		background: lightblue;
+	}
+	75%{
+		margin-top: 0px;
+		margin-left: 240px;
+		background: green;
+	}
+	100%{
+		margin-top: 0px;
+		margin-left: 0px;
+		background: blue;
+	}
+}
+
